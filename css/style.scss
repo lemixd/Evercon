@@ -1,0 +1,39 @@
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 1240px) { @content ; }
+    }
+    @else if $point == desktop-sm {
+        @media (min-width: 1152px) { @content ; }
+    }
+    @else if $point == laptop {
+        @media (min-width: 1024px) { @content ; }
+    }
+    @else if $point == tablet {
+        @media (min-width: 768px) { @content ; }
+    }
+    @else if $point == mobile-xs {
+        @media (max-width: 320px) { @content ; }
+    }
+ }
+
+ @import "sass/variables";
+ @import "sass/reset";
+ @import "sass/logos";
+ @import "sass/sections/hero";
+ @import "sass/sections/business";
+ @import "sass/sections/players";
+ @import "sass/sections/cta";
+ @import "sass/sections/revenue";
+ @import "sass/sections/jobs";
+ 
+ @import "sass/UI/svg";
+ @import "sass/UI/typography";
+ @import "sass/UI/buttons";
+ @import "sass/UI/links";
+ 
+ @import "sass/swiper";
+ @import "sass/animation";
+ 
+ @import "sass/sections/footer";
+
+ @import "sass/layout";

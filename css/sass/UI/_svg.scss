@@ -1,0 +1,131 @@
+.svg-icon {
+    fill: none;
+    stroke: var(--color-zircon);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+#evercon-logo {
+
+    .evercon-main {
+
+        fill: #0F145B;
+
+        &-light {
+            fill: #fff;
+        }
+    }
+    
+    .evercon-symbol {
+        fill: #ed145a;
+    }
+}
+
+#ribbon {
+
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.5;
+    
+    .line-middle, .line {
+        stroke-width: 2;
+    }
+    
+    .line {
+        stroke: url(#ribbon-gradient);
+    }
+    
+    .line-middle {
+        stroke: var(--color-yankees-blue);
+    }
+    
+    .end-octagon-base {
+        fill: var(--color-heliotrope);
+    }
+    
+    .icon-arrow-right {
+        stroke: var(--color-white);
+        stroke-width: 1.5;
+    }
+    
+    .start-octagon {
+        fill: var(--color-downy);
+    }
+}
+
+#revenue-chart {
+    overflow: visible;
+
+    .chat-area {
+        opacity: 0.1;
+        isolation: isolate;
+        fill: url(#chart-area);
+    }
+    
+    .chart-line {
+        fill: none;
+        stroke-linejoin: round;
+        stroke-linecap:round;
+        stroke-width: 20px;
+        stroke: url(#chart-line);
+
+        @include breakpoint(tablet) {
+            stroke-width: 8px;
+        }
+    }
+    
+    .chart-vertical-line {
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 16 16;
+        stroke-width: 2;
+
+        @include breakpoint(tablet) {
+            stroke-dasharray: 4 4;
+            stroke-width: 1;
+        }
+    }
+    
+    .chart-emoji {
+        font-size: 72px;
+        text-anchor: middle;
+
+        @include breakpoint(tablet) {
+            font-size: 40px;
+        }
+
+        &:nth-of-type(1) {
+            transform: translate(28px, 792px);
+        }
+
+        &:nth-of-type(2) {
+            transform: translate(191px, 774px);
+        }
+
+        &:nth-of-type(3) {
+            transform: translate(354px, 745px);
+        }
+
+        &:nth-of-type(4) {
+            transform: translate(517px, 691px);
+        }
+
+        &:nth-of-type(5) {
+            transform: translate(680px, 617px);
+        }
+
+        &:nth-of-type(6) {
+            transform: translate(844px, 521px);
+        }
+
+        &:nth-of-type(7) {
+            transform: translate(1006px, 409px);
+        }
+
+        &:nth-of-type(8) {
+            transform: translate(1172px, 42px);
+        }
+    }
+}

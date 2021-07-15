@@ -1,0 +1,19 @@
+.cta {
+    padding: 2.4rem 0 4.8rem;
+
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+
+        @include breakpoint(tablet) {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+
+    &__button {
+        margin-top: 2.4rem;
+    }
+}

@@ -1,0 +1,33 @@
+html, body {
+// Prevent Safari to scroll horizontally
+// Glitchy if use in mobile Opera and Samsung browser
+    @include breakpoint(desktop-sm) {
+        position: relative;
+        overflow-x: hidden;
+    }
+}
+
+body {
+    font-size: var(--font-size-ms);
+    background-color: var(--color-woodsmoke);
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 2.4rem;
+
+    @include breakpoint(desktop-sm) {
+        width: 1152px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(desktop) {
+        width: 1216px;
+        margin: 0 auto;
+        box-sizing: content-box;
+    }
+}

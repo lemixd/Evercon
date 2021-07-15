@@ -1,0 +1,107 @@
+.jobs {
+    padding: 4.8rem 0 2.4rem;
+
+    @include breakpoint(tablet) {
+        padding-top: 10.4rem;
+    }
+
+    &__list {
+        display: grid;
+        gap: 0.8rem;
+        margin-top: 2.4rem;
+        list-style: none;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3.2rem;
+        }
+    }
+
+    &__quote {
+        padding: 4rem 0;
+        font-size: var(--font-size-md);
+
+        @include breakpoint(tablet) {
+            text-align: center;
+            font-size: var(--font-size-lg);
+        }
+
+        @include breakpoint(desktop) {
+            padding: 10rem 0 6.4rem;
+            font-size: var(--font-size-2xl);
+        }
+    }
+
+    &__image-wrapper {
+        margin: 0 -2.4rem;
+
+        @include breakpoint(tablet) {
+            margin: unset;
+        }
+    }
+}
+
+.jobs-list {
+
+    &__item {
+        padding: 2.4rem;
+        border-radius: 2.4rem;
+        margin: 0 -2.4rem;
+        background-color: var(--color-ebony-clay);
+
+        &:hover {
+            background-color: var(--color-yankees-blue);
+        }
+
+        @for $i from 1 through length($highlight-color) {
+            &:nth-child(#{$i}) .heading-color {
+                color: nth($highlight-color, $i)
+            }
+        }
+
+        @include breakpoint(tablet) {
+            margin: 0;
+            padding: 4.8rem 7.2rem 4rem 4rem;
+        }
+    }
+
+    &__heading {
+        margin-top: 1.6rem;
+    }
+
+    &__description {
+        font-size: var(--font-size-ms);
+        margin-top: 0.8rem;
+        color: var(--color-heather);
+
+        @include breakpoint(desktop-sm) {
+            font-size: var(--font-size-md);
+        }
+
+        @include breakpoint(desktop) {
+            font-size: var(--font-size-lg);
+        }
+    }
+
+    &__button {
+        margin-top: 2.8rem;
+    }
+
+    &__pic {
+        width: 2.3rem;
+        height: 3.2rem;
+
+        @include breakpoint(desktop-sm) {
+            width: 2.8rem;
+            height: 4rem;
+        }
+    }
+}
+
+.quote-button {
+    margin-top: 2.4rem;
+
+    @include breakpoint(desktop-sm) {
+        margin-top: 4.8rem;
+    }
+}

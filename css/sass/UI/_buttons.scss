@@ -1,0 +1,57 @@
+.button {
+    font-size: var(--font-size-ms);
+    font-weight: 600;
+    color: var(--color-white);
+    border-radius: 1.2rem;
+    padding: 1.5rem 2.4rem 1.5rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: transform 200ms ease;
+
+    &:active {
+        transform: translateY(0.4rem);
+    }
+}
+
+.button-primary {
+    background-color: var(--color-blue-ribbon);
+
+
+    &:hover  {
+        background-color: var(--color-blue-ribbon-lighter);
+    }
+
+    &:active {
+        background-color: var(--color-blue-ribbon-darker);
+    }
+
+    @include breakpoint(desktop) {
+        font-size: var(--font-size-lg);
+        padding: 1.8rem 2.4rem 1.7rem;
+    }
+}
+
+.button-secondary {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: solid 2px var(--color-white);
+    padding: 1.3rem 2.4rem 1.3rem;
+
+    &:hover {
+        background-color: var(--color-blue-ribbon-lighter);
+        border-color: transparent;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: var(--font-size-lg);
+        padding: 1.8rem 2.4rem 1.7rem;
+    }
+}
+
+.button-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 1.6rem;
+}

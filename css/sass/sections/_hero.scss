@@ -1,0 +1,112 @@
+.hero {
+    height: 100%;
+
+    &__video {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__fade {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background-image: linear-gradient(to bottom, #171a2100, var(--color-woodsmoke));
+        z-index: -1;
+        text-align: center;
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.4rem;
+
+        @include breakpoint(tablet) {
+            padding-top: 5.6rem;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        color: var(--color-white);
+        list-style: none;
+    }
+
+    &__wrapper {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include breakpoint(tablet) {
+            height: 75%;
+        }
+
+        @include breakpoint(desktop) {
+            height: 85%;
+        }
+    }
+
+    &__content {
+
+        @include breakpoint(tablet) {
+            width: 60%;
+        }
+    }
+
+    &__description {
+        margin-top: 2.4rem;
+
+        @include breakpoint(desktop) {
+            margin-top: 4rem;
+        }
+    }
+
+    &__button {
+        margin-top: 4rem;
+
+        @include breakpoint(desktop) {
+            margin-top: 6.4rem;
+        }
+    }
+}
+
+.hero-nav {
+    display: none;
+
+    @include breakpoint(tablet) {
+        display: inherit;
+    }
+
+    @include breakpoint(desktop) {
+        display: inherit;
+    }
+
+    &__link {
+        font-size: var(--font-size-lg);
+        margin-left: 3.2rem;
+
+        @include breakpoint(tablet) {
+            font-size: var(--font-size-md);
+        }
+    }
+}
+
+.hero-fade__icon {
+    width: 2.2rem;
+    height: 3.2rem;
+    position: absolute;
+    bottom: 4.8rem;
+    transform: translateY(1.6rem);
+    animation: horizontalFade 2500ms ease-in-out infinite;
+    animation-direction: reverse;
+    
+    @include breakpoint(desktop-sm) {
+        animation-direction: normal;
+    }
+}

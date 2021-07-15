@@ -1,0 +1,38 @@
+@keyframes horizontalFade {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
+
+// Revenue multiplier counter
+@property --revenue-num {
+  syntax: "<integer>";
+  initial-value: 50;
+  inherits: false;
+  }
+  
+.counter {
+  animation: counter 2s 1 ease-in-out;
+  counter-reset: num var(--revenue-num);
+  animation-fill-mode: forwards;
+  
+  &::before {
+    content: counter(num);
+  }
+}
+
+@keyframes counter {
+  from {
+    --revenue-num: 50;
+  }
+  to {
+    --revenue-num: 100;
+  }
+}

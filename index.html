@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171a21"/>
+    <title>Evercon</title>
+    <link href="https://unpkg.com/swiper/swiper.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sal.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/favicon-76.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body
+>
+<!-- SVG Symbols -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+    style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
+        <defs>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" id="evercon-logo">
+                <path d="M42.422,20.956h6.6v3.073H38.9V8.573h9.915v3.073H42.422v3.186H48.03V18H42.422Zm15.478-7.4h3.612L57.07,24.029H54.176L49.734,13.553h3.612l2.288,6.237Zm15.277,6.214H65.5a2.369,2.369,0,0,0,2.446,1.638A3.975,3.975,0,0,0,70.6,20.328L72.3,22.481A6.419,6.419,0,0,1,67.725,24.3a5.351,5.351,0,0,1-5.653-5.474A5.433,5.433,0,0,1,67.7,13.284a5.272,5.272,0,0,1,5.518,5.294C73.221,18.87,73.2,19.251,73.177,19.767Zm-3.253-1.952a1.951,1.951,0,0,0-2.154-1.727,2.22,2.22,0,0,0-2.288,1.727ZM83.316,13.6l-.786,3.163a2.769,2.769,0,0,0-1.5-.4c-1.3,0-2.378,1.1-2.378,4.2v3.477h-3.32V13.553h3.276v2.221a3.329,3.329,0,0,1,3.14-2.49A3.4,3.4,0,0,1,83.316,13.6Zm.515,5.16a5.537,5.537,0,0,1,5.788-5.474A5.385,5.385,0,0,1,94.2,15.752l-2.58,1.615a2.465,2.465,0,0,0-1.974-1.01,2.313,2.313,0,0,0-2.422,2.4,2.354,2.354,0,0,0,2.422,2.467,2.464,2.464,0,0,0,1.974-1.009l2.58,1.615A5.387,5.387,0,0,1,89.619,24.3,5.592,5.592,0,0,1,83.831,18.758Zm11.6.044a5.69,5.69,0,1,1,5.675,5.5A5.518,5.518,0,0,1,95.429,18.8Zm7.986,0a2.314,2.314,0,1,0-4.621,0,2.313,2.313,0,1,0,4.621,0Zm16.016-.4v5.63h-3.32V18.6c0-1.616-.987-2.244-1.817-2.244a1.945,1.945,0,0,0-2.019,2.221v5.451h-3.32V13.553h3.32v1.885a3.186,3.186,0,0,1,3.006-2.154C118.063,13.284,119.431,15.191,119.431,18.4Z" class="evercon-main-light"/><path d="M28.346,22.818V9.182a2.361,2.361,0,0,0-1.182-2.047L15.355.317a2.361,2.361,0,0,0-2.364,0L1.182,7.135A2.364,2.364,0,0,0,0,9.182V22.818a2.364,2.364,0,0,0,1.182,2.047l11.809,6.818a2.361,2.361,0,0,0,2.364,0l11.809-6.818A2.361,2.361,0,0,0,28.346,22.818Z" class="evercon-main-light"/><path d="M16.546,12.512,12.6,13.765a2.634,2.634,0,0,0-1.838,2.76l.213,2.415-.876.278A1.879,1.879,0,0,1,7.875,16.54l4.774-8.912a1.879,1.879,0,0,1,3.529.721Zm-5.015,3.945.637,7.194a1.88,1.88,0,0,0,3.529.722l4.774-8.913a1.879,1.879,0,0,0-2.225-2.679L12.834,14.5A1.881,1.881,0,0,0,11.531,16.457Z" class="evercon-symbol"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 48" id="icon-mouse">
+                <path d="M15.64,10.191v7M31,32V16A15,15,0,0,0,16,1h0A15,15,0,0,0,1,16V32A15,15,0,0,0,16,47h0A15,15,0,0,0,31,32Z"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-arrow-right">
+                <path d="M1,9H17m-5.657,5.657L17,9M11.343,3.343,17,9"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-arrow-angle-left">
+                <path d="M10,13,4,7l6-6"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-arrow-angle-right">
+                <path d="M4,1l6,6L4,13"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 40" id="pic-fire">
+                <path d="M13.952,40A13.953,13.953,0,0,1,4.395,15.883C6.9,13.533,13.022,9.3,12.1,0c11.16,7.442,16.741,14.884,5.578,26.046,1.86,0,4.651,0,9.3-4.6a14.015,14.015,0,0,1,.93,4.6A13.952,13.952,0,0,1,13.952,40Z" style="fill:#e94e26"/><path d="M14.411,40A7.864,7.864,0,0,0,19.8,26.408c-1.407-1.324-4.863-3.709-4.339-8.951-6.291,4.194-9.437,8.388-3.146,14.679-1.049,0-2.621,0-5.242-2.59A7.665,7.665,0,0,0,14.411,40Z" style="fill:#f0a52d"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1002" id="ribbon">
+                <defs><linearGradient id="ribbon-gradient" x1="313" y1="967.88" x2="313" y2="14.607" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a557ff"/><stop offset="0.25" stop-color="#63cc5c"/><stop offset="0.75" stop-color="#f0a52d"/><stop offset="1" stop-color="#55cebe"/></linearGradient></defs><path class="line" d="M625,15.607s-624,92-624,224,624,132,624,264S1,660.816,1,767.607,315.307,888.614,315.307,966.88"/><path class="line-middle" d="M625,15.607s-624,132-624,264,624,132,624,264S1,700.816,1,807.607,315.307,888.614,315.307,966.88"/><path class="line" d="M625,15.607s-624,172-624,304,624,132,624,264S1,740.816,1,847.607,315.307,888.614,315.307,966.88"/><g id="end-octagon"><path class="end-octagon-base" d="M350.568,978.416V944.325a5.911,5.911,0,0,0-2.954-5.118L318.09,922.162a5.912,5.912,0,0,0-5.909,0l-29.524,17.045a5.909,5.909,0,0,0-2.954,5.118v34.091a5.906,5.906,0,0,0,2.954,5.118l29.524,17.045a5.907,5.907,0,0,0,5.909,0l29.524-17.045A5.908,5.908,0,0,0,350.568,978.416Z"/><path class="icon-arrow-right" d="M315.135,950.058v22.626m-8-8,8,8m8-8-8,8"/></g><path class="start-octagon" d="M639.1,22.819V9.182a2.366,2.366,0,0,0-1.182-2.047L626.107.317a2.361,2.361,0,0,0-2.364,0l-11.81,6.818a2.361,2.361,0,0,0-1.18,2.047V22.818a2.364,2.364,0,0,0,1.182,2.047l11.81,6.818a2.365,2.365,0,0,0,2.364,0l11.81-6.818A2.366,2.366,0,0,0,639.1,22.819Z"/>
+            </symbol>
+        </defs>
+    </svg>
+    
+<!-- Hero Section -->
+    <section class="hero" id="hero">
+
+        <video data-v-5ca79c4a="" src="assets/cover/evercon-cover-4K.mp4" poster="assets/cover/evercon-cover-poster-4K.jpg" autoplay="autoplay" muted="muted" loop="loop" class="hero__video"></video>
+        <div class="hero__fade">
+            <svg class="hero-fade__icon svg-icon">
+                <use xlink:href="#icon-mouse"></use>
+            </svg>
+        </div>
+
+        <div class="hero__wrapper wrapper">
+            <nav class="hero__nav">
+                <svg class="hero__logo evercon-logo">
+                    <use xlink:href="#evercon-logo"></use>
+                </svg>
+                <ul class="hero-nav hero__list">
+                    <li class="hero-nav__item">
+                        <a href="#business" class="hero-nav__link link">Key numbers</a>
+                    </li>
+                    <li class="hero-nav__item">
+                        <a href="#players" class="hero-nav__link link">The team</a>
+                    </li>
+                    <li class="hero-nav__item">
+                        <a href="#jobs" class="hero-nav__link link">Job openings</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hero__content">
+                <h2 class="hero__heading heading-2">Creating world IT products for millions of users</h2>
+                <p class="hero__description description">We develop outstanding Customer-centric platforms in social discovery niche</p>
+                <button class="hero__button button button-primary">Join our team!</button>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Business Section -->
+<section class="business" id="business">
+    <div class="business__content wrapper">
+        <h2 class="business__heading heading-2"><span class="highlight">Inspire</span> with our business</h2>
+        <div class="spotlight-wrapper">
+            <svg class="ribbon__pic">
+                <use xlink:href="#ribbon"></use>
+            </svg>
+            <div class="business__spotlight">
+                <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
+                    <p class="business-spotlight__label text-color">Growth MoM</p>
+                    <p class="business-spotlight__spotlight">2x revenue</p>
+                </div>
+                <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
+                    <p class="business-spotlight__label text-color">Senior players</p>
+                    <p class="business-spotlight__spotlight">Team of 40</p>
+                </div>
+                <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
+                    <p class="business-spotlight__label text-color">By investement volume in Ukraine</p>
+                    <p class="business-spotlight__spotlight">Top 3 startup</p>
+                </div>
+                <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
+                    <p class="business-spotlight__label text-color">Company by revenue in niche</p>
+                    <p class="business-spotlight__spotlight">Top 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Players Section -->
+<section class="players" id="players">
+    <div class="players__wrapper wrapper">
+        <h2 class="players__heading heading-2" data-sal="slide-up" style="--sal-duration: 400ms;">We acquired <span class="highlight nowrap">A-Players</span> from legendary brands</h2>
+        <div class="players__companies" data-sal="flip-up" style="--sal-duration: 800ms;">
+            <img src="assets/logo/logo-google.svg" alt="Google" class="players__logo">
+            <img src="assets/logo/logo-civitta.svg" alt="Civitta" class="players__logo">
+            <img src="assets/logo/logo-pwc.svg" alt="PWC" class="players__logo">
+            <img src="assets/logo/logo-microsoft.svg" alt="Microsoft" class="players__logo">
+            <img src="assets/logo/logo-preply.svg" alt="Preply" class="players__logo">
+        </div>
+
+        <div class="player swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="player__info">
+                        <figure class="player__image">
+                            <img src="assets/players/player-1.png" alt="Player">
+                        </figure>
+                        <div class="player__basics">
+                            <p class="player__name">Sergey Bogoslovskiy</p>
+                            <p class="player__position">CEO, Evercon</p>
+                            <ul class="player-stats">
+                                <li class="player-stats__item">Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
+                                <li class="player-stats__item">Ex-Startup mentor at Google</li>
+                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
+                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="player__info">
+                        <figure class="player__image">
+                            <img src="assets/players/player-1.png" alt="Player">
+                        </figure>
+                        <div class="player__basics">
+                            <p class="player__name">Sergey Bogoslovskiy</p>
+                            <p class="player__position">CEO, Evercon</p>
+                            <ul class="player-stats">
+                                <li class="player-stats__item">Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
+                                <li class="player-stats__item">Ex-Startup mentor at Google</li>
+                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
+                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="player__info">
+                        <figure class="player__image">
+                            <img src="assets/players/player-1.png" alt="Player">
+                        </figure>
+                        <div class="player__basics">
+                            <p class="player__name">Sergey Bogoslovskiy</p>
+                            <p class="player__position">CEO, Evercon</p>
+                            <ul class="player-stats">
+                                <li class="player-stats__item">Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
+                                <li class="player-stats__item">Ex-Startup mentor at Google</li>
+                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
+                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-nav-wrapper">
+                <div class="swiper-button-prev slider-button">
+                    <svg class="slider-button__icon svg-icon">
+                        <use xlink:href="#icon-arrow-angle-left"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next slider-button">
+                    <svg class="slider-button__icon svg-icon">
+                        <use xlink:href="#icon-arrow-angle-right"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Secton -->
+    <section class="cta" data-sal="slide-up">
+        <div class="cta__wrapper wrapper">
+            <h2 class="cta__heading heading-2">Want to Boost your<br> career with a Team <br>of <span class="highlight">TOP performers?</span></h2>
+            <button class="cta__button button button-primary">Go for it now!</button>
+        </div>
+    </section>
+
+<!-- Revenue Section -->
+    <section class="revenue">
+        <div class="revenue__wrapper">
+            <div class="wrapper">
+                <h2 class="revenue__heading heading-2" data-sal="slide-up">Watch out our <br><span class="highlight">Revenue growth</span></h2>
+                <span class="revenue__multiplier" data-sal="fade" data-sal-delay="100" style="--sal-duration: 400ms;">x</span>
+                <div class="revenue__chart-wrapper">
+                    <figure class="revenue__rocket">
+                        <img src="assets/rocket_3x.png" alt="Rocket" class="rocket">
+                    </figure>
+                    <div class="revenue__chart chart">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1190 802" id="revenue-chart"><defs><linearGradient id="chart-area" x1="26.24" y1="414.26" x2="1167.24" y2="414.26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2262ff" stop-opacity="0"/><stop offset="0.1" stop-color="#2262ff" stop-opacity="0.2"/><stop offset="0.24" stop-color="#2262ff" stop-opacity="0.4"/><stop offset="0.37" stop-color="#2262ff" stop-opacity="0.6"/><stop offset="0.5" stop-color="#2262ff" stop-opacity="0.74"/><stop offset="0.63" stop-color="#2262ff" stop-opacity="0.85"/><stop offset="0.75" stop-color="#2262ff" stop-opacity="0.93"/><stop offset="0.88" stop-color="#2262ff" stop-opacity="0.98"/><stop offset="1" stop-color="#2262ff"/></linearGradient><linearGradient id="chart-line" x1="22" y1="404" x2="1171.65" y2="404" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff5454"/><stop offset="0.5" stop-color="#ff7e44"/><stop offset="1" stop-color="#ffc544"/></linearGradient></defs><path class="chat-area" d="M26.24,780.08l83.81-7.43,84-11.48,76.36-7.63,168-45.82,78.2-26.45L675.1,608.46l168-99.27,84-38.18,76.35-68.72,84-145.08,79.81-227.13V798.39l-1141,.06Z"/><polyline class="chart-line" points="25.83 779.92 109.83 772.54 193.82 761.07 270.18 753.43 438.17 707.62 516.37 681.17 674.87 608.36 842.86 509.09 926.85 470.91 1003.21 402.19 1087.2 257.11 1167.65 28.04"/><line class="chart-vertical-line" x1="26" y1="780" x2="26" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="189" y1="761" x2="189" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="352" y1="731" x2="352" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="515" y1="681" x2="515" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="678" y1="605" x2="678" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="841" y1="510" x2="841" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="1004" y1="400" x2="1004" y2="799"/><text class="chart-emoji">🤟</text><line class="chart-vertical-line" x1="1167" y1="30" x2="1167" y2="799"/><text class="chart-emoji">🤟</text></svg>
+                        <div class="chart__legend">
+                            <span class="legend-item">MAR 20’</span>
+                            <span class="legend-item">MAY 20’</span>
+                            <span class="legend-item">JUL 20’</span>
+                            <span class="legend-item">SEP 20’</span>
+                            <span class="legend-item">NOV 20’</span>
+                            <span class="legend-item">JAN 21’</span>
+                            <span class="legend-item">MAR 21’</span>
+                            <span class="legend-item">MAY 21’</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Jobs Section -->
+    <section class="jobs" id="jobs">
+        <div class="jobs__wrapper wrapper">
+            <h2 class="jobs__heading heading-2" data-sal="slide-up">Explore open <br> <span class="highlight">opportunities</span></h2>
+            <ul class="jobs__list">
+                <li class="jobs-list__item" data-sal="slide-up">
+                    <svg class="jobs-list__pic">
+                        <use xlink:href="#pic-fire"></use>
+                    </svg>
+                    <h4 class="jobs-list__heading heading-4 heading-color">Product manager</h4>
+                    <p class="jobs-list__description">Create cool features that change the World and make customers fall in love</p>
+                    <button class="jobs-list__button button button-secondary">Apply position
+                        <svg class="svg-icon button-icon">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="jobs-list__item" data-sal="slide-up">
+                    <svg class="jobs-list__pic">
+                        <use xlink:href="#pic-fire"></use>
+                    </svg>
+                    <h4 class="jobs-list__heading heading-4 heading-color">Junior analyst</h4>
+                    <p class="jobs-list__description">Artificial Intelligence, Big Data sets and forecasting for business acceleration</p>
+                    <button class="jobs-list__button button button-secondary">Apply position
+                        <svg class="svg-icon button-icon">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="jobs-list__item" data-sal="slide-up">
+                    <svg class="jobs-list__pic">
+                        <use xlink:href="#pic-fire"></use>
+                    </svg>
+                    <h4 class="jobs-list__heading heading-4 heading-color">Business development</h4>
+                    <p class="jobs-list__description">Work with multi cultures and partners all over the World</p>
+                    <button class="jobs-list__button button button-secondary">Apply position
+                        <svg class="svg-icon button-icon">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="jobs-list__item" data-sal="slide-up">
+                    <svg class="jobs-list__pic">
+                        <use xlink:href="#pic-fire"></use>
+                    </svg>
+                    <h4 class="jobs-list__heading heading-4 heading-color">Support team lead</h4>
+                    <p class="jobs-list__description">Empathise our Customers with smooth service and fast solutions</p>
+                    <button class="jobs-list__button button button-secondary">Apply position
+                        <svg class="svg-icon button-icon">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="jobs__quote" data-sal="slide-up">
+                <p class="quote-text">We strive to find «our People» and great talents, so if you didn’t find a right opportunity but dream to join us just click the button</p>
+                <button class="quote-button button button-primary">Send resume</button>
+            </div>
+            <figure class="jobs__image-wrapper">
+                <img src="assets/team.jpg" alt="our team" class="jobs__image">
+            </figure>
+        </div>
+    </section>
+
+
+<!-- CTA Setion -->
+    <section class="cta" data-sal="slide-up">
+        <div class="cta__wrapper wrapper">
+            <h2 class="heading-2">Ready to jump<br><span class="highlight">on board?</span></h2>
+            <button class="cta__button button button-primary">Join us now!</button>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <div class="footer__info">
+                    <h3 class="heading-3">We unite emotions</h3>
+                    <p class="footer-location">Kyiv, Ukraine</p>
+                </div>
+                <div class="footer__vacancies">
+                    <h class="heading-5 highlight">Heroes needed</h>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="" class="footer-list__link link">Product manager</a></li>
+                        <li class="footer-list__item"><a href="" class="footer-list__link link">Junior analyst</a></li>
+                        <li class="footer-list__item"><a href="" class="footer-list__link link">Business development</a></li>
+                        <li class="footer-list__item"><a href="" class="footer-list__link link">Support team lead</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <svg class="footer__logo evercon-logo">
+                    <use xlink:href="#evercon-logo"></use>
+                </svg>
+                <p class="footer__copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/sal.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

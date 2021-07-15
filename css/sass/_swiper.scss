@@ -1,0 +1,30 @@
+.slider-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+    border: solid 1px #393f4d;
+    background-color: var(--color-ebony-clay);
+    cursor: pointer;
+
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    &:hover &__icon {
+        stroke: var(--color-red-ribbon);
+    }
+}
+
+.swiper {
+
+    &-nav-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 1.6rem;
+        padding-top: 2rem;
+    }
+}

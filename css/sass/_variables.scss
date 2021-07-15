@@ -1,0 +1,47 @@
+:root {
+  --color-woodsmoke: #171a21;
+  --color-red-ribbon: #e40047;
+  --color-zircon: #f0f4ff;
+  --color-heather: #b4bacc;
+  --color-blue-ribbon: #2262ff;
+  --color-blue-ribbon-lighter: #4076FF;
+  --color-blue-ribbon-darker: #2256da;
+  --color-ebony-clay: #1f2533;
+  --color-downy: #55cebe;
+  --color-white: #ffffff;
+  --color-flamongo: #e94e26;
+  --color-razzle-roze: #ef44e4;
+  --color-cornflower-blue: #5e75eb;
+  --color-mantis: #63cc5c;
+  --color-picton-blue: #2daef0;
+  --color-violet-red: #f4306d;
+  --color-heliotrope: #a557ff;
+  --color-fuel-yellow: #f0a52d;
+  --color-bright-gray: #393f4d;
+  --color-yankees-blue: #232b3e;
+
+    /* Font sizes */
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-ms: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 2.2rem;
+  --font-size-xl: 2.8rem;
+  --font-size-2xl: 3.5rem;
+  --font-size-3xl: 5.6rem;
+  --font-size-4xl: 8rem;
+  --font-size-super: 12rem;
+
+  --h2-font-size: var(--font-size-xl);
+  --h3-font-size: var(--font-size-lg);
+  --h4-font-size: var(--font-size-md);
+  --h5-font-size: var(--font-size-md);
+ 
+  /* Line heights */
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+
+  --revenue-num: 100;
+  }
+
+  $highlight-color: var(--color-downy), var(--color-fuel-yellow), var(--color-mantis), var(--color-razzle-roze);
