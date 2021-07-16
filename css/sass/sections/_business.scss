@@ -1,5 +1,6 @@
 .business {
     padding: 4.8rem 0 6.4rem;
+    overflow-x: hidden;
 
     @include breakpoint(mobile-xs) {
         padding-bottom: 0;

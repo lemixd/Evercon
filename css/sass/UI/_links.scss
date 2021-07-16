@@ -14,11 +14,12 @@
         border-radius: 0.2rem;
         background-color: var(--color-red-ribbon);
         transform: scaleX(0);
-        transform-origin: left;
+        transform-origin: right;
         transition: transform 100ms ease-out;
     }
 
     &:hover::after {
         transform: scaleX(1);
+        transform-origin: left;
     }
 }

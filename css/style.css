@@ -224,6 +224,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
 .business {
   padding: 4.8rem 0 6.4rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 320px) {
@@ -972,8 +973,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 #revenue-chart .chart-emoji:nth-of-type(8) {
-  -webkit-transform: translate(1172px, 42px);
-          transform: translate(1172px, 42px);
+  -webkit-transform: translate(1166px, 42px);
+          transform: translate(1166px, 42px);
 }
 
 html, body {
@@ -1137,8 +1138,8 @@ html, body {
   background-color: var(--color-red-ribbon);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transition: -webkit-transform 100ms ease-out;
   transition: -webkit-transform 100ms ease-out;
   transition: transform 100ms ease-out;
@@ -1148,6 +1149,8 @@ html, body {
 .link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .slider-button {
