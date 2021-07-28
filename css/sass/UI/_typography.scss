@@ -36,6 +36,12 @@ html, body {
     color: var(--color-red-ribbon);
 }
 
+mark {
+    padding: 0 0.4rem;
+    background-color: var(--color-fuel-yellow);
+    color: var(--color-woodsmoke);
+}
+
 .nowrap {
     white-space: nowrap;
 }

@@ -1,0 +1,45 @@
+.gallery {
+    padding-bottom: 3.2rem;
+
+    @include breakpoint(tablet) {
+        padding-bottom: 8rem;
+    }
+
+    &__container {
+        margin: 0 -2.4rem;
+
+        @include breakpoint(tablet) {
+            height: 51.2rem;
+            margin: unset;
+        }
+    }
+
+    &__slide {
+        height: auto;
+    }
+
+    &__thumb {
+        margin-top: 0.8rem;
+        cursor: pointer;
+
+        & .swiper-slide {
+            width: 25%;
+            opacity: 0.3;
+        }
+
+        & .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        
+        &  img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+}
+
