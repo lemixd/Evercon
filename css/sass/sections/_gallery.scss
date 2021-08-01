@@ -1,10 +1,6 @@
 .gallery {
     padding-bottom: 3.2rem;
 
-    @include breakpoint(tablet) {
-        padding-bottom: 8rem;
-    }
-
     &__container {
         margin: 0 -2.4rem;
 

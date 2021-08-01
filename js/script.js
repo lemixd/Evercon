@@ -69,18 +69,22 @@ revenue.addEventListener('sal:in', () => {
 
 // Ribbon lines fill on scroll
 let lines = document.querySelectorAll('.line');
-let l = dasharray = dashoffset = lines[0].getTotalLength();
-const a = business.getBoundingClientRect().top;
+let lineLength = lines[0].getTotalLength();
+const lineOffsetTop = business.getBoundingClientRect().top;
+const velocity = 5.5;
+const prerender = window.innerHeight / 2;
+
+lines.forEach((line) => {
+  line.setAttributeNS(null, "stroke-dasharray", lineLength);
+})
 
 document.body.addEventListener("scroll", function() {
-  dashoffset = l - this.scrollTop * l / (this.scrollHeight - this.clientHeight) * 3.5;
-  // dashoffset = l - this.scrollTop * l / (this.scrollHeight - this.clientHeight) * 3.5 + a;
-  // dashoffset = l - a - this.scrollTop;
+  const dashoffset =  Math.max(
+    lineLength - (Math.max(this.scrollTop - lineOffsetTop + prerender, 0)  ) * lineLength / (this.scrollHeight - this.clientHeight) * velocity,
+    0
+  );
 
-  
-  for(i=0;i<lines.length;i++) {
-    lines[i].setAttributeNS(null, "stroke-dasharray", l);
-    lines[i].setAttributeNS(null, "stroke-dashoffset", dashoffset);
-  }
-  // console.log(dashoffset);
+  lines.forEach((line) => {
+    line.setAttributeNS(null, "stroke-dashoffset", dashoffset);
+  })
 });

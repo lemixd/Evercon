@@ -44,13 +44,15 @@
 
     &__rocket {
         position: absolute;
-        top: 20%;
-        left: 30%;
-        width: 30%;
+        top: 0;
+        left: 0;
+        width: 70%;
         transform: rotate(50deg);
 
         @include breakpoint(desktop-sm) {
-            top: 30%;
+            top: 10%;
+            left: 10%;
+            width: 60%;
         }
     }
 }

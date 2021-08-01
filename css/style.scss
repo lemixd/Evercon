@@ -2,6 +2,12 @@
  @import "sass/variables";
  @import "sass/reset";
  @import "sass/logos";
+
+ @import "sass/UI/svg";
+ @import "sass/UI/typography";
+ @import "sass/UI/buttons";
+ @import "sass/UI/links";
+ 
  @import "sass/sections/hero";
  @import "sass/sections/business";
  @import "sass/sections/players";
@@ -10,10 +16,6 @@
  @import "sass/sections/revenue";
  @import "sass/sections/jobs";
  
- @import "sass/UI/svg";
- @import "sass/UI/typography";
- @import "sass/UI/buttons";
- @import "sass/UI/links";
  
  @import "sass/swiper";
  @import "sass/animation";

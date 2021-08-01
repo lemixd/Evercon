@@ -6,6 +6,13 @@
         padding-bottom: 0;
     }
 
+    &__heading {
+
+        @include breakpoint(tablet) {
+            text-align: center;
+        }
+    }
+
     &__content {
         position: relative;
     }
@@ -23,6 +30,10 @@
 
 .spotlight-wrapper {
     position: relative;
+
+    @include breakpoint(tablet) {
+        margin-top: 7.2rem;
+    }
 }
 
 .ribbon__pic {
@@ -93,10 +104,9 @@
             &:before {
                 position: absolute;
                 content: attr(data-spotlight);
-                -webkit-text-stroke: 2px var(--color-white);
+                -webkit-text-stroke: 2px var(--color-yankees-blue);
                 color: transparent;
                 transform: translate(-8px, 8px);
-                opacity: 0.1;
                 z-index: -1;
             }
         }

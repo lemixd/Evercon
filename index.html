@@ -8,8 +8,8 @@
     <meta name="description" content="Evercon develop outstanding Customer-centric platforms in social discovery niche">
     <title>Evercon</title>
     <link href="https://unpkg.com/swiper/swiper.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/sal.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
@@ -234,52 +234,6 @@
         </div>
     </section>
 
-<!-- Gallery Section -->
-    <section class="gallery">
-        <div class="wrapper">
-            <div class="swiper-container gallery__container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide gallery__slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/1.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/2.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/3.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-            </div>
-        <div thumbsSlider="" class="swiper-container gallery__thumb">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/1.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/2.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/3.jpg" alt="" loading="lazy">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 <!-- Revenue Section -->
     <section class="revenue">
         <div class="revenue__wrapper">
@@ -287,10 +241,11 @@
                 <h2 class="revenue__heading heading-2" data-sal="slide-up">Watch out our <br><span class="highlight">Revenue growth</span></h2>
                 <span class="revenue__multiplier" data-sal="fade">x</span>
                 <div class="revenue__chart-wrapper">
-                    <figure class="revenue__rocket">
+                    <!-- <figure class="revenue__rocket">
                         <img src="assets/rocket_3x.png" alt="Rocket" loading="lazy" class="rocket">
-                    </figure>
-                    <div class="revenue__chart chart">
+                    </figure> -->
+                    <object class="revenue__rocket" type="image/svg+xml" data="assets/rocket.svg"></object>
+                    <div class="revenue__chart chart" data-sal="fade">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1190 802" id="revenue-chart"><defs><linearGradient id="chart-area" x1="26.24" y1="414.26" x2="1167.24" y2="414.26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2262ff" stop-opacity="0"/><stop offset="0.1" stop-color="#2262ff" stop-opacity="0.2"/><stop offset="0.24" stop-color="#2262ff" stop-opacity="0.4"/><stop offset="0.37" stop-color="#2262ff" stop-opacity="0.6"/><stop offset="0.5" stop-color="#2262ff" stop-opacity="0.74"/><stop offset="0.63" stop-color="#2262ff" stop-opacity="0.85"/><stop offset="0.75" stop-color="#2262ff" stop-opacity="0.93"/><stop offset="0.88" stop-color="#2262ff" stop-opacity="0.98"/><stop offset="1" stop-color="#2262ff"/></linearGradient><linearGradient id="chart-line" x1="22" y1="404" x2="1171.65" y2="404" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff5454"/><stop offset="0.5" stop-color="#ff7e44"/><stop offset="1" stop-color="#ffc544"/></linearGradient></defs><path class="chat-area" d="M26.24,780.08l83.81-7.43,84-11.48,76.36-7.63,168-45.82,78.2-26.45L675.1,608.46l168-99.27,84-38.18,76.35-68.72,84-145.08,79.81-227.13V798.39l-1141,.06Z"/><polyline class="chart-line" points="25.83 779.92 109.83 772.54 193.82 761.07 270.18 753.43 438.17 707.62 516.37 681.17 674.87 608.36 842.86 509.09 926.85 470.91 1003.21 402.19 1087.2 257.11 1167.65 28.04"/><line class="chart-vertical-line" x1="26" y1="780" x2="26" y2="799"/>
                             <text class="chart-emoji">🤞</text><line class="chart-vertical-line" x1="189" y1="761" x2="189" y2="799"/>
                             <text class="chart-emoji">😌</text><line class="chart-vertical-line" x1="352" y1="731" x2="352" y2="799"/>
@@ -327,11 +282,11 @@
                     </svg>
                     <h4 class="jobs-list__heading heading-4 heading-color">Product manager</h4>
                     <p class="jobs-list__description">Create cool features that change the World and make customers fall in love</p>
-                    <button class="jobs-list__button button button-secondary">Apply position
+                    <a href="" target="_blank" class="jobs-list__button button button-secondary">Apply position
                         <svg class="svg-icon button-icon">
                             <use xlink:href="#icon-arrow-right"></use>
                         </svg>
-                    </button>
+                    </a>
                 </li>
                 <li class="jobs-list__item" data-sal="slide-up">
                     <svg class="jobs-list__pic">
@@ -339,11 +294,11 @@
                     </svg>
                     <h4 class="jobs-list__heading heading-4 heading-color">Junior analyst</h4>
                     <p class="jobs-list__description">Artificial Intelligence, Big Data sets and forecasting for business acceleration</p>
-                    <button class="jobs-list__button button button-secondary">Apply position
+                    <a href="" target="_blank" class="jobs-list__button button button-secondary">Apply position
                         <svg class="svg-icon button-icon">
                             <use xlink:href="#icon-arrow-right"></use>
                         </svg>
-                    </button>
+                    </a>
                 </li>
                 <li class="jobs-list__item" data-sal="slide-up">
                     <svg class="jobs-list__pic">
@@ -351,11 +306,11 @@
                     </svg>
                     <h4 class="jobs-list__heading heading-4 heading-color">Business development</h4>
                     <p class="jobs-list__description">Work with multi cultures and partners all over the World</p>
-                    <button class="jobs-list__button button button-secondary">Apply position
+                    <a href="" target="_blank" class="jobs-list__button button button-secondary">Apply position
                         <svg class="svg-icon button-icon">
                             <use xlink:href="#icon-arrow-right"></use>
                         </svg>
-                    </button>
+                    </a>
                 </li>
                 <li class="jobs-list__item" data-sal="slide-up">
                     <svg class="jobs-list__pic">
@@ -363,23 +318,76 @@
                     </svg>
                     <h4 class="jobs-list__heading heading-4 heading-color">Support team lead</h4>
                     <p class="jobs-list__description">Empathise our Customers with smooth service and fast solutions</p>
-                    <button class="jobs-list__button button button-secondary">Apply position
+                    <a href="" target="_blank" class="jobs-list__button button button-secondary">Apply position
                         <svg class="svg-icon button-icon">
                             <use xlink:href="#icon-arrow-right"></use>
                         </svg>
-                    </button>
+                    </a>
                 </li>
             </ul>
             <div class="jobs__quote" data-sal="slide-up">
                 <p class="quote-text">We strive to find «our People» and great talents, so if you didn’t find a right opportunity but dream to join us just click the button</p>
                 <button class="quote-button button button-primary">Send resume</button>
             </div>
-            <figure class="jobs__image-wrapper">
-                <img src="assets/team.jpg" alt="our team" loading="lazy" class="jobs__image">
-            </figure>
+            <!-- <figure class="jobs__image-wrapper">
+                <img src="assets/gallery/team.jpg" alt="our team" loading="lazy" class="jobs__image">
+            </figure> -->
         </div>
     </section>
-
+    
+<!-- Gallery Section -->
+    <section class="gallery">
+        <div class="wrapper">
+            <div class="swiper-container gallery__container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery__slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/team.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/1.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/2.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/3.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        <div thumbsSlider="" class="swiper-container gallery__thumb">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery__slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/team.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/1.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/2.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <figure class="gallery__image">
+                            <img src="assets/gallery/3.jpg" alt="team photo" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- CTA Setion -->
     <section class="cta" data-sal="slide-up">
@@ -398,12 +406,12 @@
                     <p class="footer-location">Kyiv, Ukraine</p>
                 </div>
                 <div class="footer__vacancies">
-                    <h class="heading-5 highlight">Heroes needed</h>
+                    <h5 class="heading-5 highlight">Heroes needed</h5>
                     <ul class="footer-list">
-                        <li class="footer-list__item"><a href="" class="footer-list__link link">Product manager</a></li>
-                        <li class="footer-list__item"><a href="" class="footer-list__link link">Junior analyst</a></li>
-                        <li class="footer-list__item"><a href="" class="footer-list__link link">Business development</a></li>
-                        <li class="footer-list__item"><a href="" class="footer-list__link link">Support team lead</a></li>
+                        <li class="footer-list__item"><a href="" target="_blank" class="footer-list__link link">Product manager</a></li>
+                        <li class="footer-list__item"><a href="" target="_blank" class="footer-list__link link">Junior analyst</a></li>
+                        <li class="footer-list__item"><a href="" target="_blank" class="footer-list__link link">Business development</a></li>
+                        <li class="footer-list__item"><a href="" target="_blank" class="footer-list__link link">Support team lead</a></li>
                     </ul>
                 </div>
             </div>
