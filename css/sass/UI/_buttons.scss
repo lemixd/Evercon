@@ -32,7 +32,7 @@
 
     @include breakpoint(desktop) {
         font-size: var(--font-size-lg);
-        padding: 1.8rem 2.4rem 1.7rem;
+        padding: 1.9rem 2.4rem;
     }
 }
 
@@ -41,7 +41,7 @@
     align-items: center;
     background-color: transparent;
     border: solid 2px var(--color-white);
-    padding: 1.3rem 2.4rem 1.3rem;
+    padding: 1rem 2.4rem;
 
     &:hover {
         background-color: var(--color-blue-ribbon-lighter);
@@ -50,7 +50,7 @@
 
     @include breakpoint(desktop) {
         font-size: var(--font-size-lg);
-        padding: 1.8rem 2.4rem 1.7rem;
+        padding: 1.35rem 2.4rem;
     }
 }
 

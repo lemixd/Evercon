@@ -29,7 +29,7 @@
         justify-content: left;
         margin: 0 $gap-sm/-2 $gap-sm/2 $gap-sm/-2;
         
-        @include breakpoint(tablet) {
+        @include breakpoint(desktop-sm) {
             justify-content: space-between;
             margin: $gap/2 $gap/-2;
             order: 2;
@@ -94,7 +94,6 @@
         display: flex;
         flex-direction: column;
         flex: 1 1 0;
-        font-size: var(--font-size-ms);
 
         @include breakpoint(tablet) {
             font-size: var(--font-size-md);

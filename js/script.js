@@ -36,7 +36,7 @@ const playerInfo = [
    ]}
 ];
 
-playerInfo.forEach((player, index) => {
+playerInfo.forEach(player => {
   const instance = document.importNode(players.content, true);
 
   instance.querySelector('.player__name').innerText = player.name;
@@ -111,8 +111,17 @@ sal();
 
 const revenue = document.querySelector('.revenue__multiplier');
 
+function multiplier() {
+  let i = 50;
+  const timer = setInterval(() => {
+      if (i === 100) { clearInterval(timer); }
+      revenue.innerText = i++ +'x';
+  }, 25);
+}
+
 revenue.addEventListener('sal:in', () => {
-  revenue.classList.add('counter');
+  // revenue.classList.add('counter');
+  multiplier();
 });
 
 
