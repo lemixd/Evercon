@@ -1,0 +1,108 @@
+.company {
+    padding: 1.6rem 0;
+    font-size: var(--font-size-ms);
+
+    @include breakpoint(tablet) {
+        padding: 8rem 0;
+        font-size: var(--font-size-lg);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__highlights {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -2.4rem;
+
+        @include breakpoint(tablet) {
+            margin: 0 $gap/-2;
+            flex-direction: row;
+        }
+    }
+
+    &__companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin: 0 $gap-sm/-2 $gap-sm/2 $gap-sm/-2;
+        
+        @include breakpoint(tablet) {
+            justify-content: space-between;
+            margin: $gap/2 $gap/-2;
+            order: 2;
+        }
+    }
+
+    &__logo {
+        height: 2.4rem;
+        width: auto;
+        margin: $gap-sm/2;
+
+        @include breakpoint(tablet) {
+            margin: $gap/2;
+            height: 3.2rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 0;
+        padding: 3.2rem;
+        margin: 0.4rem 0;
+        border-radius: 2.4rem;
+        text-align: center;
+        background-color: var(--color-ebony-clay);
+
+        @include breakpoint(tablet) {
+            margin: $gap/2;
+        }
+    }
+
+    &__spotlight {
+        font-size: var(--font-size-3xl);
+        font-weight: 600;
+
+        @include breakpoint(tablet) {
+            font-size: var(--font-size-4xl);
+            line-height: 1;
+        }
+
+        @include breakpoint(desktop-sm) {
+            font-size: var(--font-size-super);
+        }
+    }
+    
+    &__heading {
+        margin-bottom: 1.6rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__description {
+        color: var(--color-heather);
+        margin-top: 0.8rem;
+    }
+
+    &__achievements {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        font-size: var(--font-size-ms);
+
+        @include breakpoint(tablet) {
+            font-size: var(--font-size-md);
+        }
+    }
+}
+
+// .heading-wrapper {
+//     margin: 1.6rem;
+//     flex: 1 1 0;
+// }

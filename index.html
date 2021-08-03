@@ -123,12 +123,12 @@
             </svg>
             <div class="business__spotlight">
                 <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
-                    <p class="business-spotlight__label text-color">Growth MoM</p>
+                    <p class="business-spotlight__label text-color">Growth M<span>o</span>M</p>
                     <p class="business-spotlight__spotlight" data-spotlight="2x revenue">2x revenue</p>
                 </div>
                 <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
-                    <p class="business-spotlight__label text-color">Senior players</p>
-                    <p class="business-spotlight__spotlight" data-spotlight="Team of 40">Team of 40</p>
+                    <p class="business-spotlight__label text-color">A+ players</p>
+                    <p class="business-spotlight__spotlight" data-spotlight="Team of 40">Team of 20</p>
                 </div>
                 <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
                     <p class="business-spotlight__label text-color">By investement volume in Ukraine</p>
@@ -137,6 +137,39 @@
                 <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
                     <p class="business-spotlight__label text-color">Company by revenue in niche</p>
                     <p class="business-spotlight__spotlight" data-spotlight="Top 10">Top 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Section (Optional) -->
+<section class="company">
+    <div class="company__wrapper wrapper">
+        <div class="heading-wrapper">
+            <h2 class="company__heading heading-2" data-sal="slide-up">Team of <br><span class="highlight">20 senior specialists</span></h2>
+            <!-- <p class="company__description">Team of 20 senior specialists</p> -->
+        </div>
+        <div class="company__companies">
+            <img src="assets/logo/logo-google.svg" alt="Google" class="company__logo">
+            <img src="assets/logo/logo-civitta.svg" alt="Civitta" class="company__logo">
+            <img src="assets/logo/logo-pwc.svg" alt="PWC" class="company__logo">
+            <img src="assets/logo/logo-microsoft.svg" alt="Microsoft" class="company__logo">
+            <img src="assets/logo/logo-preply.svg" alt="Preply" class="company__logo">
+        </div>
+        <div class="company__highlights">
+            <div class="company__item">
+                <p class="company__spotlight">x2</p>
+                <p class="company__description">Revenue growth MoM</p>
+            </div>
+            <div class="company__achievements">
+                <div class="company__item">
+                    <h5 class="heading-5">Top 3 startup</h5>
+                    <p class="company__description">By investement volume in Ukraine</p>
+                </div>
+                <div class="company__item">
+                    <h5 class="heading-5">Top 10</h5>
+                    <p class="company__description">Company by revenue in niche</p>
                 </div>
             </div>
         </div>
@@ -156,58 +189,23 @@
         </div>
 
         <div class="player swiper-container player-slide">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="player__info">
+            <div class="swiper-wrapper player-slides">
+        
+                <template id="player-info">
+                    <div class="swiper-slide">
+                        <div class="player__info">
                         <figure class="player__image" data-swiper-parallax="-300">
-                            <img src="assets/players/player-1.png" alt="Player" loading="lazy">
+                            <img class="player__photo" src="" alt="Player" loading="lazy">
                         </figure>
                         <div class="player__basics">
-                            <p class="player__name">Sergey Bogoslovskiy</p>
-                            <p class="player__position">CEO, Evercon</p>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">Founded the social discovery web product, which got to the <mark>TOP 10 companies by revenue</mark> in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
-                                <li class="player-stats__item">Ex-Startup <mark>mentor at Google</mark></li>
-                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
-                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
-                            </ul>
+                            <p class="player__name"></p>
+                            <p class="player__position"></p>
+                            <ul class="player-stats"></ul>
+                        </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="player__info">
-                        <figure class="player__image" data-swiper-parallax="-300">
-                            <img src="assets/players/player-2.png" alt="Player" loading="lazy">
-                        </figure>
-                        <div class="player__basics">
-                            <p class="player__name">Sergey Bogoslovskiy</p>
-                            <p class="player__position">CEO, Evercon</p>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">Founded the social discovery web product, which got to the <mark>TOP 10 companies by revenue</mark> in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
-                                <li class="player-stats__item">Ex-Startup <mark>mentor at Google</mark></li>
-                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
-                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="player__info">
-                        <figure class="player__image" data-swiper-parallax="-300">
-                            <img src="assets/players/player-1.png" alt="Player" loading="lazy">
-                        </figure>
-                        <div class="player__basics">
-                            <p class="player__name">Sergey Bogoslovskiy</p>
-                            <p class="player__position">CEO, Evercon</p>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">Founded the social discovery web product, which got to the <mark>TOP 10 companies by revenue</mark> in the niche in six month and TOP 15 startups in Ukraine by investment volume.</li>
-                                <li class="player-stats__item">Ex-Startup <mark>mentor at Google</mark></li>
-                                <li class="player-stats__item">Launched mobile app with $1+ mln monthly revenue after a year</li>
-                                <li class="player-stats__item">Built retention department from scratch for the product with 30+ mln users</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                </template>
+
             </div>
             <div class="swiper-nav-wrapper">
                 <div class="swiper-button-prev slider-button">
@@ -350,16 +348,6 @@
                             <img src="assets/gallery/1.jpg" alt="team photo" loading="lazy">
                         </figure>
                     </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/2.jpg" alt="team photo" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/3.jpg" alt="team photo" loading="lazy">
-                        </figure>
-                    </div>
                 </div>
             </div>
         <div thumbsSlider="" class="swiper-container gallery__thumb">
@@ -372,16 +360,6 @@
                     <div class="swiper-slide gallery__slide">
                         <figure class="gallery__image">
                             <img src="assets/gallery/1.jpg" alt="team photo" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/2.jpg" alt="team photo" loading="lazy">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide gallery__slide">
-                        <figure class="gallery__image">
-                            <img src="assets/gallery/3.jpg" alt="team photo" loading="lazy">
                         </figure>
                     </div>
                 </div>

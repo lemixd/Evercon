@@ -41,6 +41,7 @@
         flex-wrap: wrap;
         justify-content: left;
         gap: 2.4rem;
+        grid-gap: 2.4rem;
         margin-top: 3.2rem;
 
         @include breakpoint(tablet) {
@@ -109,6 +110,10 @@
         text-transform: uppercase;
 
         @include breakpoint(tablet) {
+            font-size: var(--font-size-xl);
+        }
+
+        @include breakpoint(desktop-sm) {
             font-size: var(--font-size-2xl);
         }
     }
@@ -139,7 +144,12 @@
         padding: 0.8rem 0 0 0.8rem;
 
         @include breakpoint(tablet) {
+            font-size: var(--font-size-ms);
             padding-top: 2.4rem;
+        }
+
+        @include breakpoint(desktop-sm) {
+            font-size: var(--font-size-lg);
         }
 
         &::before {

@@ -81,6 +81,10 @@
         font-weight: 600;
         text-transform: uppercase;
 
+        & span {
+            text-transform: none;
+        }
+
         @include breakpoint(tablet) {
             font-size: var(--font-size-ms);
         }
