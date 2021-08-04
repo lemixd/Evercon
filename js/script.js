@@ -9,7 +9,7 @@ const players = document.getElementById('player-info');
 const playerInfo = [
   { name: 'Sergey Bogoslovskiy',
     position: 'CEO, Evercon',
-    photo: 'assets/players/player-1.png',
+    photo: 'assets/players/Bogoslovskiy.png',
     description: [
       'Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 15 startups in Ukraine by investment volume',
       'Ex-Startup mentor at Google',
@@ -18,16 +18,16 @@ const playerInfo = [
     ]},
   { name: 'Nadia Smirnova',
     position: 'CMO, Evercon',
-    photo: 'assets/players/player-2.png',
+    photo: 'assets/players/Smirnova.png',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      'Fusce a scelerisque ligula. Vivamus sed lacus in mi auctor auctor ac vitae lacus',
-      'Ut ultrices, lacus at sollicitudin consectetur, dolor leo porttitor neque, ac maximus ligula nunc in massa. Morbi in ultrices turpis',
-      'Vestibulum egestas libero sed augue ornare lacinia'
+      '8 years of business experience with education background in economic cybernetics and finance',
+      'Complex models development and margin strategies for the largest Eastern European holding with 4B yearly turnover',
+      'Built full cycle analytics and strategies for vertically integrated companies with 3B net value ',
+      'Lead Civitta projects in enternprises Due diligence: All seeds, Kernel, Digit'
     ]},
   { name: 'Dmitriy Pavlenko',
     position: 'Head of B2B, Evercon',
-    photo: 'assets/players/player-3.png',
+    photo: 'assets/players/Pavlenko.png',
     description: [
       '10 years of experience in business development, MBA education',
       'Unfolded market research operational business to 92 countries and 500+ employees in 3 years',
@@ -36,7 +36,7 @@ const playerInfo = [
    ]}
 ];
 
-playerInfo.forEach((player, index) => {
+playerInfo.forEach(player => {
   const instance = document.importNode(players.content, true);
 
   instance.querySelector('.player__name').innerText = player.name;
@@ -111,8 +111,17 @@ sal();
 
 const revenue = document.querySelector('.revenue__multiplier');
 
+function multiplier() {
+  let i = 50;
+  const timer = setInterval(() => {
+      if (i === 100) { clearInterval(timer); }
+      revenue.innerText = i++ +'x';
+  }, 25);
+}
+
 revenue.addEventListener('sal:in', () => {
-  revenue.classList.add('counter');
+  // revenue.classList.add('counter');
+  multiplier();
 });
 
 
