@@ -1,9 +1,3 @@
-// Current Year
-copyright = document.querySelector('.footer__copyright');
-year = new Date().getFullYear();
-copyright.innerText = '© ' + year + ' Evercon';
-
-
 // Players Slider Template
 const players = document.getElementById('player-info');
 const playerInfo = [
@@ -75,7 +69,62 @@ var playerSwiper = new Swiper(".player-slide", {
 });
 
 
-var galleySwiperThumb = new Swiper(".gallery__thumb", {
+// Jobs template
+const jobsList = document.getElementById('jobs-list');
+const footerList = document.getElementById('footer-list');
+const jobs = [
+  { position: 'Marketing Manager',
+    description: 'Develop strategies of investing mln. of dollars in paid acquisition',
+    link: 'https://t.me/mxplp'
+  },
+  { position: 'Junior Analyst',
+  description: 'Artificial Intelligence, Big Data sets and forecasting for business acceleration',
+  link: 'https://t.me/mxplp'
+  },
+  { position: 'Product Manager',
+  description: 'Create cool features that change the World and make customers fall in love',
+  link: 'https://t.me/mxplp'
+  },
+  { position: 'Support Team Lead',
+  description: 'Empathise our Customers with smooth service and fast solutions',
+  link: 'https://t.me/mxplp'
+  },
+];
+
+jobs.forEach(job => {
+  const jobsInstance = document.importNode(jobsList.content, true);
+
+  jobsInstance.querySelector('.jobs-list__heading').innerText = job.position;
+  jobsInstance.querySelector('.jobs-list__description').innerText = job.description;
+  jobsInstance.querySelector('.jobs-list__button').setAttribute('href', job.link);
+
+  document.querySelector('.jobs__list').appendChild(jobsInstance);
+
+  const footerLink = document.importNode(footerList.content, true);
+  footerLink.querySelector('.footer-list__link').innerText = job.position;
+  footerLink.querySelector('.footer-list__link').setAttribute('href', job.link);
+
+  document.querySelector('.footer-list').appendChild(footerLink);
+});
+
+
+// Gallery
+const galleryTemplate = document.getElementById('gallery-photos');
+const countPhotos = 9 +1;
+
+for(let i=1; i<countPhotos; i++) {
+  const galleryPhoto = document.importNode(galleryTemplate.content, true);
+  galleryPhoto.querySelector('.gallery__photo').setAttribute('src', 'assets/gallery/' + [i] + '.jpg');
+  document.querySelector('.gallery__container .swiper-wrapper').appendChild(galleryPhoto);
+}
+
+for(let i=1; i<countPhotos; i++) {
+  const galleryThumb = document.importNode(galleryTemplate.content, true);
+  galleryThumb.querySelector('.gallery__photo').setAttribute('src', 'assets/gallery/' + [i] + '.jpg');
+  document.querySelector('.gallery__thumb .swiper-wrapper').appendChild(galleryThumb);
+}
+
+var gallerySwiperThumb = new Swiper(".gallery__thumb", {
     spaceBetween: 8,
     slidesPerView: 5,
     freeMode: true,
@@ -102,7 +151,7 @@ var galleySwiperPic = new Swiper(".gallery__container", {
       prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: galleySwiperThumb,
+      swiper: gallerySwiperThumb,
     },
 });
 
@@ -146,3 +195,8 @@ document.body.addEventListener("scroll", function() {
     line.setAttributeNS(null, "stroke-dashoffset", dashoffset);
   })
 });
+
+// Current Year
+copyright = document.querySelector('.footer__copyright');
+year = new Date().getFullYear();
+copyright.innerText = '© ' + year + ' Evercon';

@@ -54,9 +54,13 @@
             background-color: var(--color-yankees-blue);
         }
 
+        &:nth-child(n) .heading-color {
+            color: var(--color-red-ribbon);
+        }
+
         @for $i from 1 through length($highlight-color) {
             &:nth-child(#{$i}) .heading-color {
-                color: nth($highlight-color, $i)
+                color: nth($highlight-color, $i);
             }
         }
 

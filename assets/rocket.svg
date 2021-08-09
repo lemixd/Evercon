@@ -32,6 +32,8 @@
 #fire-glow {
 	animation: fire-glow 2000ms linear infinite alternate;
 	transform-origin: center;
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
 }
 
 @keyframes fire-glow {

@@ -632,6 +632,8 @@ mark {
 
 .business-spotlight {
   padding: 4.8rem 0;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 320px) {
@@ -694,6 +696,18 @@ mark {
 
 .business-spotlight:nth-child(4) .text-color {
   color: var(--color-razzle-roze);
+}
+
+.business-spotlight:nth-child(5) .text-color {
+  color: var(--color-picton-blue);
+}
+
+.business-spotlight:nth-child(6) .text-color {
+  color: var(--color-violet-red);
+}
+
+.business-spotlight:nth-child(7) .text-color {
+  color: var(--color-heliotrope);
 }
 
 .business-spotlight__spotlight {
@@ -1200,6 +1214,10 @@ mark {
   background-color: var(--color-yankees-blue);
 }
 
+.jobs-list__item:nth-child(n) .heading-color {
+  color: var(--color-red-ribbon);
+}
+
 .jobs-list__item:nth-child(1) .heading-color {
   color: var(--color-downy);
 }
@@ -1214,6 +1232,18 @@ mark {
 
 .jobs-list__item:nth-child(4) .heading-color {
   color: var(--color-razzle-roze);
+}
+
+.jobs-list__item:nth-child(5) .heading-color {
+  color: var(--color-picton-blue);
+}
+
+.jobs-list__item:nth-child(6) .heading-color {
+  color: var(--color-violet-red);
+}
+
+.jobs-list__item:nth-child(7) .heading-color {
+  color: var(--color-heliotrope);
 }
 
 @media (min-width: 768px) {
