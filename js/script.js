@@ -11,7 +11,7 @@ const playerInfo = [
     position: 'CEO, Evercon',
     photo: 'assets/players/Bogoslovskiy.png',
     description: [
-      'Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 15 startups in Ukraine by investment volume',
+      'Founded the social discovery web product, which got to the TOP 10 companies by revenue in the niche in six month and TOP 3 startups in Ukraine by investment volume',
       'Ex-Startup mentor at Google',
       'Launched mobile app with $1+ mln monthly revenue after a year',
       'Built retention department from scratch for the product with 30+ mln users'
@@ -26,7 +26,7 @@ const playerInfo = [
       'Lead Civitta projects in enternprises Due diligence: All seeds, Kernel, Digit'
     ]},
   { name: 'Dmitriy Pavlenko',
-    position: 'Head of B2B, Evercon',
+    position: 'COO, Evercon',
     photo: 'assets/players/Pavlenko.png',
     description: [
       '10 years of experience in business development, MBA education',
