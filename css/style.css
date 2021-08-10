@@ -634,6 +634,7 @@ mark {
   padding: 4.8rem 0;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
+  visibility: visible;
 }
 
 @media (max-width: 320px) {
