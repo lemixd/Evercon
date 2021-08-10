@@ -32,9 +32,12 @@
 #fire-glow {
 	animation: fire-glow 2000ms linear infinite alternate;
 	transform-origin: center;
+	transform: scale(1) transformZ(0);
 	-webkit-perspective: 1000;
 	-webkit-backface-visibility: hidden;
 	-webkit-visibility: visible;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transform-style: preserve-3d;
 	visibility: visible;
 }
 
