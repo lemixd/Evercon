@@ -5,7 +5,8 @@
 	animation: levitation 4000ms cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
 	transform: translateY(0) rotate(3deg);
 	transform-origin: center;
-	}
+	will-change: transform;
+}
 
 @keyframes levitation {
 	to {
@@ -17,6 +18,7 @@
 #rocket-fire-glow {
 	animation: fire 200ms linear infinite alternate;
     transform-origin: 200px 350px;
+	will-change: transform;
 }
 
 #rocket-fire-glow {
@@ -39,6 +41,7 @@
 	-webkit-font-smoothing: antialiased;
 	-webkit-transform-style: preserve-3d;
 	visibility: visible;
+	will-change: transform, opacity;
 }
 
 @keyframes fire-glow {

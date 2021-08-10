@@ -36,3 +36,7 @@
     --revenue-num: 100;
   }
 }
+
+.sal-animate {
+  will-change: transform, opacity;
+}
