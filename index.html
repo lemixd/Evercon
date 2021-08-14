@@ -8,7 +8,6 @@
     <meta name="description" content="Evercon develop outstanding Customer-centric platforms in social discovery niche">
     <title>Evercon</title>
     <link href="https://unpkg.com/swiper/swiper.min.css" rel="stylesheet">
-    <link href="css/sal.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
@@ -27,23 +26,7 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <noscript>
-        <style type="text/css">
-          [data-sal|='fade'] {
-            opacity: 1;
-          }
-      
-          [data-sal|='slide'],
-          [data-sal|='zoom'] {
-            opacity: 1;
-            transform: none;
-          }
-      
-          [data-sal|='flip'] {
-            transform: none;
-          }
-        </style>
-      </noscript>      
+
 <!-- SVG Symbols -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
     style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
@@ -122,19 +105,19 @@
                 <use xlink:href="#ribbon"></use>
             </svg>
             <div class="business__spotlight">
-                <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
+                <div class="business-spotlight">
                     <p class="business-spotlight__label text-color">Growth M<span>o</span>M</p>
                     <p class="business-spotlight__spotlight" data-spotlight="2x revenue">2x revenue</p>
                 </div>
-                <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
+                <div class="business-spotlight">
                     <p class="business-spotlight__label text-color">A+ players</p>
                     <p class="business-spotlight__spotlight" data-spotlight="Team of 20">Team of 20</p>
                 </div>
-                <div class="business-spotlight" data-sal="slide-right" data-sal-delay="200">
+                <div class="business-spotlight">
                     <p class="business-spotlight__label text-color">By investement volume in Ukraine</p>
                     <p class="business-spotlight__spotlight" data-spotlight="Top 3 startup">Top 3 startup</p>
                 </div>
-                <div class="business-spotlight" data-sal="slide-left" data-sal-delay="200">
+                <div class="business-spotlight">
                     <p class="business-spotlight__label text-color">Company by revenue in niche</p>
                     <p class="business-spotlight__spotlight" data-spotlight="Top 10">Top 10</p>
                 </div>
@@ -146,15 +129,17 @@
 <!-- Players Section -->
 <section class="players" id="players">
     <div class="players__wrapper wrapper">
-        <h2 class="players__heading heading-2" data-sal="slide-up">We acquired <span class="highlight nowrap">A-Players</span> from legendary brands</h2>
-        <div class="players__companies" data-sal="slide-up">
+        <h2 class="players__heading heading-2">We acquired <span class="highlight nowrap">A-Players</span> from legendary brands</h2>
+        <div class="players__companies">
             <img src="assets/logo/logo-google.svg" alt="Google" class="players__logo">
             <img src="assets/logo/logo-civitta.svg" alt="Civitta" class="players__logo">
             <img src="assets/logo/logo-preply.svg" alt="Preply" class="players__logo">
             <img src="assets/logo/logo-pwc.svg" alt="PWC" class="players__logo">
             <img src="assets/logo/logo-microsoft.svg" alt="Microsoft" class="players__logo">
         </div>
+    </div>
 
+    <div class="wrapper">
         <div class="player swiper-container player-slide">
             <div class="swiper-wrapper player-slides">
         
@@ -172,7 +157,7 @@
                         </div>
                     </div>
                 </template>
-
+    
             </div>
             <div class="swiper-nav-wrapper">
                 <div class="swiper-button-prev slider-button">
@@ -187,12 +172,12 @@
                 </div>
             </div>
         </div>
-
     </div>
+
 </section>
 
 <!-- CTA Secton -->
-    <section class="cta" data-sal="slide-up">
+    <section class="cta">
         <div class="cta__wrapper wrapper">
             <h2 class="cta__heading heading-2">Want to Boost your<br> career with a Team <br>of <span class="highlight">TOP performers?</span></h2>
             <a href="https://t.me/mxplp" rel="nofollow noopener" target="_blank" class="cta__button button button-primary">Go for it now!</a>
@@ -203,8 +188,8 @@
     <section class="revenue">
         <div class="revenue__wrapper">
             <div class="wrapper">
-                <h2 class="revenue__heading heading-2" data-sal="slide-up">Watch out our <br><span class="highlight">Revenue growth</span></h2>
-                <span class="revenue__multiplier" data-sal="fade">x</span>
+                <h2 class="revenue__heading heading-2">Watch out our <br><span class="highlight">Revenue growth</span></h2>
+                <span class="revenue__multiplier">x</span>
                 <div class="revenue__chart-wrapper">
                     <!-- <figure class="revenue__rocket">
                         <img src="assets/rocket_3x.png" alt="Rocket" loading="lazy" class="rocket">
@@ -239,11 +224,11 @@
 <!-- Jobs Section -->
     <section class="jobs" id="jobs">
         <div class="jobs__wrapper wrapper">
-            <h2 class="jobs__heading heading-2" data-sal="slide-up">Explore open <br> <span class="highlight">opportunities</span></h2>
+            <h2 class="jobs__heading heading-2">Explore open <br> <span class="highlight">opportunities</span></h2>
             <ul class="jobs__list">
 
                 <template id="jobs-list">
-                    <li class="jobs-list__item" data-sal="slide-up">
+                    <li class="jobs-list__item">
                         <svg class="jobs-list__pic">
                             <use xlink:href="#pic-fire"></use>
                         </svg>
@@ -258,7 +243,7 @@
                 </template>
 
             </ul>
-            <div class="jobs__quote" data-sal="slide-up">
+            <div class="jobs__quote">
                 <p class="quote-text">We strive to find «our People» and great talents, so if you didn’t find a right opportunity but dream to join us just click the button</p>
                 <a href="https://t.me/mxplp" rel="nofollow noopener" target="_blank" class="quote-button button button-primary">Send resume</a>
             </div>
@@ -291,7 +276,7 @@
     </section>
 
 <!-- CTA Setion -->
-    <section class="cta" data-sal="slide-up">
+    <section class="cta">
         <div class="cta__wrapper wrapper">
             <h2 class="heading-2">Ready to jump<br><span class="highlight">on board?</span></h2>
             <a href="https://t.me/mxplp" rel="nofollow noopener" target="_blank" class="cta__button button button-primary">Join us now!</a>
@@ -329,8 +314,10 @@
     </footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/sal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/animation.js"></script>
 
 </body>
 </html>

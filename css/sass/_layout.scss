@@ -1,8 +1,10 @@
 html, body {
-// Prevent Safari to scroll horizontally
+    position: relative;
+    height: 100%;
+
+    // Prevent Safari to scroll horizontally
 // Glitchy if use in mobile Opera and Samsung browser
-    @include breakpoint(desktop-sm) {
-        position: relative;
+    @include breakpoint(desktop) {
         overflow-x: hidden;
     }
 }

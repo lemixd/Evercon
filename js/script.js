@@ -124,6 +124,7 @@ for(let i=1; i<countPhotos; i++) {
   document.querySelector('.gallery__thumb .swiper-wrapper').appendChild(galleryThumb);
 }
 
+// Gallery Slider Config
 var gallerySwiperThumb = new Swiper(".gallery__thumb", {
     spaceBetween: 8,
     slidesPerView: 5,
@@ -153,47 +154,6 @@ var galleySwiperPic = new Swiper(".gallery__container", {
     thumbs: {
       swiper: gallerySwiperThumb,
     },
-});
-
-// Scroll Animation
-sal();
-
-const revenue = document.querySelector('.revenue__multiplier');
-
-function multiplier() {
-  let i = 50;
-  const timer = setInterval(() => {
-      if (i === 100) { clearInterval(timer); }
-      revenue.innerText = i++ +'x';
-  }, 25);
-}
-
-revenue.addEventListener('sal:in', () => {
-  // revenue.classList.add('counter');
-  multiplier();
-});
-
-
-// Ribbon lines fill on scroll
-let lines = document.querySelectorAll('.line');
-let lineLength = lines[0].getTotalLength();
-const lineOffsetTop = business.getBoundingClientRect().top;
-const velocity = 5.5;
-const prerender = window.innerHeight / 2;
-
-lines.forEach((line) => {
-  line.setAttributeNS(null, "stroke-dasharray", lineLength);
-})
-
-document.body.addEventListener("scroll", function() {
-  const dashoffset =  Math.max(
-    lineLength - (Math.max(this.scrollTop - lineOffsetTop + prerender, 0)  ) * lineLength / (this.scrollHeight - this.clientHeight) * velocity,
-    0
-  );
-
-  lines.forEach((line) => {
-    line.setAttributeNS(null, "stroke-dashoffset", dashoffset);
-  })
 });
 
 // Current Year

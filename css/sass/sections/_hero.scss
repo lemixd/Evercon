@@ -85,11 +85,7 @@
 .hero-nav {
     display: none;
 
-    @include breakpoint(tablet) {
-        display: inherit;
-    }
-
-    @include breakpoint(desktop) {
+    @include breakpoint(desktop-sm) {
         display: inherit;
     }
 

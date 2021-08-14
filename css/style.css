@@ -216,7 +216,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 html, body {
-  height: 100%;
   font-size: 62.5%;
   line-height: 1.5;
   font-family: "IBM Plex Sans", sans-serif;
@@ -515,13 +514,7 @@ mark {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .hero-nav {
-    display: inherit;
-  }
-}
-
-@media (min-width: 1240px) {
+@media (min-width: 1152px) {
   .hero-nav {
     display: inherit;
   }
@@ -632,12 +625,6 @@ mark {
 
 .business-spotlight {
   padding: 4.8rem 0;
-  -webkit-perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  -webkit-visibility: visible;
-  -webkit-font-smoothing: antialiased;
-  -webkit-transform-style: preserve-3d;
-  visibility: visible;
 }
 
 @media (max-width: 320px) {
@@ -1012,13 +999,19 @@ mark {
 
 @media (min-width: 768px) {
   .gallery__container {
-    height: 51.2rem;
     margin: unset;
   }
 }
 
 .gallery__slide {
   height: auto;
+  max-height: 27.6rem;
+}
+
+@media (min-width: 768px) {
+  .gallery__slide {
+    max-height: 51.2rem;
+  }
 }
 
 .gallery__thumb {
@@ -1028,7 +1021,14 @@ mark {
 
 .gallery__thumb .swiper-slide {
   width: 25%;
+  max-height: 4.8rem;
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .gallery__thumb .swiper-slide {
+    max-height: 7.2rem;
+  }
 }
 
 .gallery__thumb .swiper-slide-thumb-active {
@@ -1542,9 +1542,13 @@ mark {
       flex-basis: 33.33%;
 }
 
-@media (min-width: 1152px) {
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+@media (min-width: 1240px) {
   html, body {
-    position: relative;
     overflow-x: hidden;
   }
 }

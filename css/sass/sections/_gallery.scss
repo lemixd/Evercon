@@ -5,13 +5,17 @@
         margin: 0 -2.4rem;
 
         @include breakpoint(tablet) {
-            height: 51.2rem;
             margin: unset;
         }
     }
 
     &__slide {
         height: auto;
+        max-height: 27.6rem;
+
+        @include breakpoint(tablet) {
+            max-height: 51.2rem;
+        }
     }
 
     &__thumb {
@@ -20,7 +24,12 @@
 
         & .swiper-slide {
             width: 25%;
+            max-height: 4.8rem;
             opacity: 0.3;
+
+            @include breakpoint(tablet) {
+                max-height: 7.2rem;
+            }
         }
 
         & .swiper-slide-thumb-active {
