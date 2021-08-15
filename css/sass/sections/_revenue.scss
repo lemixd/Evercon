@@ -3,6 +3,7 @@
     
     &__wrapper {
         padding: 6.4rem 0;
+        overflow: hidden;
 
         @include breakpoint(desktop) {
             padding: 16rem 0 12rem;
@@ -44,16 +45,17 @@
 
     &__rocket {
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 0;
-        width: 70%;
-        transform: rotate(50deg);
+        width: 100%;
+        z-index: 1;
+        // transform: rotate(50deg);
 
-        @include breakpoint(desktop-sm) {
-            top: 10%;
-            left: 10%;
-            width: 60%;
-        }
+        // @include breakpoint(desktop-sm) {
+        //     top: 10%;
+        //     left: 10%;
+        //     width: 60%;
+        // }
     }
 }
 

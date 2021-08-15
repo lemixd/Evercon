@@ -1052,6 +1052,7 @@ mark {
 
 .revenue__wrapper {
   padding: 6.4rem 0;
+  overflow: hidden;
 }
 
 @media (min-width: 1240px) {
@@ -1101,19 +1102,10 @@ mark {
 
 .revenue__rocket {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
-  width: 70%;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
-}
-
-@media (min-width: 1152px) {
-  .revenue__rocket {
-    top: 10%;
-    left: 10%;
-    width: 60%;
-  }
+  width: 100%;
+  z-index: 1;
 }
 
 .chart {

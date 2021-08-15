@@ -27,13 +27,13 @@ gsap.registerPlugin(ScrollTrigger);
 const animDur = 0.5;
 const animTranslateX = 100;
 const animTranslateY = 40;
-const animStart = "top 75%";
+const animStart = "top 80%";
 
 // Business section
-const spotlightsOdd = gsap.utils.toArray('.business-spotlight:nth-of-type(odd)');
-spotlightsOdd.forEach(spotlight => {
+const spotlightsOdd = gsap.utils.toArray('.business-spotlight');
+spotlightsOdd.forEach((spotlight, index) => {
   gsap.fromTo(spotlight, {
-    x: -animTranslateX,
+    x: (index % 2) ? animTranslateX : -animTranslateX,
     opacity: 0,
   }, {
     x: 0,
@@ -46,36 +46,25 @@ spotlightsOdd.forEach(spotlight => {
   });
 });
 
-const spotlightsEven = gsap.utils.toArray('.business-spotlight:nth-of-type(even)');
-spotlightsEven.forEach(spotlight => {
-  gsap.fromTo(spotlight, {
-    x: animTranslateX,
-    opacity: 0,
-  }, {
-    x: 0,
-    opacity: 1,
-    duration: animDur,
-    scrollTrigger: {
-      trigger: spotlight,
-      start: animStart,
-    }
-  });
-});
 
-gsap.utils.toArray('.players__wrapper, .cta, .revenue__heading, .revenue__multiplier, .jobs__heading, .jobs-list__item, .jobs__quote').forEach(el => {
-  gsap.fromTo(el, {
+const slideUp = {
+    "anim-slide-up": {y: 0, opacity: 1, duration: animDur}
+  };
+
+for (let p in slideUp) {
+gsap.utils.toArray("." + p).forEach(el => {
+gsap.fromTo(el, {
     y: animTranslateY,
     opacity: 0,
-  }, {
-    y: 0,
-    opacity: 1,
-    duration: animDur,
+    }, {
+    ...slideUp[p],
     scrollTrigger: {
-      trigger: el,
-      start: animStart,
+        trigger: el,
+        start: animStart,
     }
-  });
+    });
 });
+}
 
 
 // Revenue Counter
@@ -91,4 +80,52 @@ function multiplier() {
 ScrollTrigger.create({
     trigger: '.revenue__multiplier',
     onEnter: () => multiplier(),
+    once: true,
 });
+
+
+// Rocket anim
+const rocket = document.querySelector('.revenue__rocket');
+lottie.setQuality('low');
+
+lottie.loadAnimation({
+container: rocket,
+renderer: 'canvas',
+loop: true,
+autoplay: true,
+path: 'assets/rocket.json'
+});
+
+gsap.fromTo(rocket, {
+  xPercent: -30,
+  yPercent: 30,
+  rotation: 10,
+  }, {
+  xPercent: 20,
+  yPercent: -40,
+  rotation: -15,
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: '.revenue__chart-wrapper',
+    start: 'top 60%',
+    scrub: 0.6,
+    once: true,
+  }
+});
+
+
+// var tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.revenue__chart-wrapper',
+//     start: 'top 60%',
+//     scrub: 0.6,
+//     once: true,
+//     markers: true,
+//   }
+// })
+// // .fromTo(rocket, {x: -100, y: 0, rotation: 10}, {x:50, y: -50, rotation: -10, ease: "slow(0.7, 0.7, false)"})
+// // .to(rocket, {x:120, y: -150, rotation: -30})
+// // .to(rocket, {y: -300, rotate: -55,})
+
+// .fromTo(rocket, {xPercent: -30, yPercent: 30, rotation: 10}, {xPercent: 20, yPercent: -40, rotation: -10})
+// .to(rocket, {xPercent: 0, yPercent: 0, rotation: 0,})
