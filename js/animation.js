@@ -24,7 +24,7 @@ document.body.addEventListener("scroll", function() {
 // Animation on scroll
 gsap.registerPlugin(ScrollTrigger);
 
-const animDur = 0.5;
+const animDur = 0.4;
 const animTranslateX = 100;
 const animTranslateY = 40;
 const animStart = "top 80%";
@@ -112,20 +112,3 @@ gsap.fromTo(rocket, {
     once: true,
   }
 });
-
-
-// var tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.revenue__chart-wrapper',
-//     start: 'top 60%',
-//     scrub: 0.6,
-//     once: true,
-//     markers: true,
-//   }
-// })
-// // .fromTo(rocket, {x: -100, y: 0, rotation: 10}, {x:50, y: -50, rotation: -10, ease: "slow(0.7, 0.7, false)"})
-// // .to(rocket, {x:120, y: -150, rotation: -30})
-// // .to(rocket, {y: -300, rotate: -55,})
-
-// .fromTo(rocket, {xPercent: -30, yPercent: 30, rotation: 10}, {xPercent: 20, yPercent: -40, rotation: -10})
-// .to(rocket, {xPercent: 0, yPercent: 0, rotation: 0,})
