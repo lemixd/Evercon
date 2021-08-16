@@ -56,8 +56,8 @@ var playerSwiper = new Swiper(".player-slide", {
       delay: 5000,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".slider-button",
+      prevEl: ".slider-button",
     },
     breakpoints: {
       1024: {
