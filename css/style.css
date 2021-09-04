@@ -1003,12 +1003,11 @@ mark {
 
 .gallery__slide {
   height: auto;
-  max-height: 27.6rem;
 }
 
 @media (min-width: 768px) {
   .gallery__slide {
-    max-height: 51.2rem;
+    max-height: 60rem;
   }
 }
 

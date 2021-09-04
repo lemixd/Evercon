@@ -11,10 +11,9 @@
 
     &__slide {
         height: auto;
-        max-height: 27.6rem;
 
         @include breakpoint(tablet) {
-            max-height: 51.2rem;
+            max-height: 60rem;
         }
     }
 

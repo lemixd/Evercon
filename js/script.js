@@ -1,5 +1,5 @@
-// Players Slider Template
-const players = document.getElementById('player-info');
+const countPhotos = 11 + 1;
+
 const playerInfo = [
   { name: 'Sergey Bogoslovskiy',
     position: 'CEO, Evercon',
@@ -30,6 +30,27 @@ const playerInfo = [
    ]}
 ];
 
+const jobs = [
+  { position: 'Marketing Manager',
+    description: 'Develop strategies of investing mln. of dollars in paid acquisition',
+    link: 'https://t.me/mxplp'
+  },
+  { position: 'Junior Analyst',
+  description: 'Artificial Intelligence, Big Data sets and forecasting for business acceleration',
+  link: 'https://t.me/mxplp'
+  },
+  { position: 'Product Manager',
+  description: 'Create cool features that change the World and make customers fall in love',
+  link: 'https://t.me/mxplp'
+  },
+  { position: 'Support Team Lead',
+  description: 'Empathise our Customers with smooth service and fast solutions',
+  link: 'https://t.me/mxplp'
+  },
+];
+
+// Players Slider Template
+const players = document.getElementById('player-info');
 playerInfo.forEach(player => {
   const instance = document.importNode(players.content, true);
 
@@ -72,24 +93,6 @@ var playerSwiper = new Swiper(".player-slide", {
 // Jobs template
 const jobsList = document.getElementById('jobs-list');
 const footerList = document.getElementById('footer-list');
-const jobs = [
-  { position: 'Marketing Manager',
-    description: 'Develop strategies of investing mln. of dollars in paid acquisition',
-    link: 'https://t.me/mxplp'
-  },
-  { position: 'Junior Analyst',
-  description: 'Artificial Intelligence, Big Data sets and forecasting for business acceleration',
-  link: 'https://t.me/mxplp'
-  },
-  { position: 'Product Manager',
-  description: 'Create cool features that change the World and make customers fall in love',
-  link: 'https://t.me/mxplp'
-  },
-  { position: 'Support Team Lead',
-  description: 'Empathise our Customers with smooth service and fast solutions',
-  link: 'https://t.me/mxplp'
-  },
-];
 
 jobs.forEach(job => {
   const jobsInstance = document.importNode(jobsList.content, true);
@@ -110,15 +113,14 @@ jobs.forEach(job => {
 
 // Gallery
 const galleryTemplate = document.getElementById('gallery-photos');
-const countPhotos = 9 +1;
 
-for(let i=1; i<countPhotos; i++) {
+for(let i=countPhotos; --i >= 1;) {
   const galleryPhoto = document.importNode(galleryTemplate.content, true);
   galleryPhoto.querySelector('.gallery__photo').setAttribute('src', 'assets/gallery/' + [i] + '.jpg');
   document.querySelector('.gallery__container .swiper-wrapper').appendChild(galleryPhoto);
 }
 
-for(let i=1; i<countPhotos; i++) {
+for(let i=countPhotos; --i >= 1;) {
   const galleryThumb = document.importNode(galleryTemplate.content, true);
   galleryThumb.querySelector('.gallery__photo').setAttribute('src', 'assets/gallery/' + [i] + '.jpg');
   document.querySelector('.gallery__thumb .swiper-wrapper').appendChild(galleryThumb);
