@@ -77,8 +77,8 @@ var playerSwiper = new Swiper(".player-slide", {
       delay: 5000,
     },
     navigation: {
-      nextEl: ".slider-button",
-      prevEl: ".slider-button",
+      nextEl: ".slider-button-nxt",
+      prevEl: ".slider-button-prv",
     },
     breakpoints: {
       1024: {
@@ -148,10 +148,6 @@ var galleySwiperPic = new Swiper(".gallery__container", {
     speed:  600,
     autoplay: {
       delay: 5000,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
     thumbs: {
       swiper: gallerySwiperThumb,
